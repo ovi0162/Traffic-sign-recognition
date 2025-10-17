@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 from functions import load_trained_model, predict_label
-from signature import display_signature
 
 # Page setup
 st.set_page_config(
