@@ -8,7 +8,7 @@ from labels import classes
 def load_trained_model():
     try:
         model = load_model('model/model.keras')
-        model.load_weights("model/model_weights")
+        model.load_weights("model/model_weights.h5")
         return model
     except Exception as e:
         st.error('Error loading model: {}'.format(str(e)))
