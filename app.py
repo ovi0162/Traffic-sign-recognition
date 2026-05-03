@@ -16,7 +16,7 @@ st.title('Traffic Sign Recognition')
 
 # Loading model
 with st.spinner('Loading model...'):
-    model = load_model()
+    model = load_trained_model()
 
 # Model loading error handling
 if model is None:
