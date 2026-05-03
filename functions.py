@@ -7,7 +7,7 @@ from labels import classes
 @st.cache_resource()
 def load_trained_model():
     try:
-        model = load_model('model/model.h5')
+        model = load_model('model/model.keras')
         model.load_weights("model/model_weights")
         return model
     except Exception as e:
